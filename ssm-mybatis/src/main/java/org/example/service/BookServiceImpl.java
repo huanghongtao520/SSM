@@ -13,10 +13,6 @@ public class BookServiceImpl implements BookService{
     @Autowired
     private BookMapper bookMapper;
 
-    public void setBookMapper(BookMapper bookMapper) {
-        this.bookMapper = bookMapper;
-    }
-
     @Override
     public void addBook(Book book) {
         bookMapper.addBook(book);
@@ -28,7 +24,7 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public Book queryOneBook(int bookID) {
+    public List<Book> queryOneBook(int bookID) {
         return bookMapper.queryOneBook(bookID);
     }
 

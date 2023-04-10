@@ -4,6 +4,7 @@
 2. Junit单元测试，看我们的代码是否能够查询出来结果！ok
 3. 问题，一定不在我们的底层，是spring出了问题！
 4. SpringMvC，整合的时候没调用到我们的service层的bean;
-applicationcontext.xml 没有注入bean,web. xml中，我们也鄉定过
-配置文件！，发现问题，我们配置的是Spring-mvc.xm1,这里面确实没有
-service bean， 所以报空指针
+    applicationcontext.xml没有注入bean,web.xml中，我们也鄉定过
+    配置文件！，发现问题，我们配置的是Spring-mvc.xm1,这里面确实没有
+    service bean， 所以报空指针
+5. UnsatisfiedDependencyException问题解决,可以重新建立一个tomcat

@@ -7,6 +7,6 @@ import java.util.List;
 public interface BookService {
     void addBook(Book book);
     void deleteBook(int bookID);
-    Book queryOneBook(int bookID);
+    List<Book> queryOneBook(int bookID);
     List<Book> queryAll();
 }
